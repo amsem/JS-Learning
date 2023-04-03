@@ -1,29 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import { Component } from 'react';
-
-class Header extends Component {
-  render() {
-    return (
-      
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className='App-title'>
-        {this.props.title}
-        </h1>
-        <div>
-        {this.props.num}
-        </div>
-        <div>
-        {JSON.stringify(this.props.myObj)}
-        </div>
-        <div>{this.props.arr[2]}</div>
-        <div>{this.props.Random(9,1)}</div>
-      </header>
-    )
-  }
- }
-
+import React from 'react';
+import Body from './components/Body';
+import Header from './components/Header';
 function App() {
   const add = (a,b) => a - b;
   return (
@@ -36,6 +14,7 @@ function App() {
         a: 2,
         b: 9
       }} />
+      <Body text1 = "hello"/>
     </div>
   );
 }
