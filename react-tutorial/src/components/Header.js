@@ -6,17 +6,6 @@ export default class Header extends React.Component {
         
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className='App-title'>
-          {this.props.title}
-          </h1>
-          <div>
-          {this.props.num}
-          </div>
-          <div>
-          {JSON.stringify(this.props.myObj)}
-          </div>
-          <div>{this.props.arr[2]}</div>
-          <div>{this.props.Random(9,1)}</div>
         </header>
       )
     }
