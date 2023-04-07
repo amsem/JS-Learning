@@ -4,6 +4,7 @@ import Body from './components/Body';
 import Header from './components/Header';
 import Counter from './components/Counter';
 import ImageSlider from './components/ImageSlider';
+import Form from './components/Form';
 class App extends Component{
 
   state = {
@@ -47,6 +48,19 @@ class App extends Component{
       return(
         <div className="App">
           <Header/>
+          <button 
+          onClick={
+            () => {
+            this.setState({ whichComponent: "Form" });
+            }}>show Form</button>
+
+          </div>
+      );
+    }
+    else if(this.state.whichComponent === "Form"){
+      return(
+        <div className="App">
+          <Form/>
           <button 
           onClick={
             () => {
