@@ -1,14 +1,16 @@
 import React from "react";
 
 export default class Counter extends React.Component {
-    constructor(props){
-        super(props);
-
-        this.state = {
+        state = {
             count:0
         };
-    }
-
+    
+    componentWillUnmount(){
+        console.log("unmouting....");
+    };
+    componentDidMount() {
+        console.log("mounting.....");
+    };
     handleButtonClick = () => {
         this.setState({
             count: this.state.count + 1

@@ -18,7 +18,7 @@ export default class ImageSlider extends React.Component {
     };
     render(){
         return (
-            <div>
+            <div className="App-header">
                 <button onClick={() => {
                     this.setState({
                         index: this.state.index -1
