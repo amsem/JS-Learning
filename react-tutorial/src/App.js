@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Counter from './components/Counter';
 import ImageSlider from './components/ImageSlider';
 import Form from './components/Form';
+import FetchData from './components/FetchData';
 class App extends Component{
 
   state = {
@@ -17,6 +18,7 @@ class App extends Component{
       return(
         <div className="App">
           <ImageSlider/>
+          <FetchData/>
           <button 
           onClick={
             () => {
