@@ -1,6 +1,5 @@
 import './App.css';
 import React, { Component } from 'react';
-import Body from './components/Body';
 import Header from './components/Header';
 import Counter from './components/Counter';
 import ImageSlider from './components/ImageSlider';
