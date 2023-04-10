@@ -18,7 +18,6 @@ class App extends Component{
       return(
         <div className="App">
           <ImageSlider/>
-          <FetchData/>
           <button 
           onClick={
             () => {
@@ -63,6 +62,19 @@ class App extends Component{
       return(
         <div className="App">
           <Form/>
+          <button 
+          onClick={
+            () => {
+            this.setState({ whichComponent: "FetchData" });
+            }}>show FetchData</button>
+
+          </div>
+      );
+    }
+    else if(this.state.whichComponent === "FetchData"){
+      return(
+        <div className="App">
+          <FetchData/>
           <button 
           onClick={
             () => {
