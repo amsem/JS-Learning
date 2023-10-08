@@ -10,4 +10,7 @@ console.log("gpa="+gpa);
 console.log(!!gpa);
 
 console.log("1"==1)
+var x=30;
+console.log(x++);
 
+console.log(++x);
