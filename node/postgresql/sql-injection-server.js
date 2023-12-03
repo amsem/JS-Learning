@@ -1,5 +1,5 @@
-const express = require("express");
-const { Pool } = require("pg");
+import express from "express";
+import { Pool } from "pg";
 const pool = new Pool({
   connectionString:
     "postgresql://postgres:mysecretpassword@localhost:5432/message_boards",
